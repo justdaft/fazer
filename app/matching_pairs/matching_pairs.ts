@@ -65,11 +65,11 @@ export class MatchingPairs {
             this.marker.x = this.layer.getTileX(this.game.input.activePointer.worldX) * 100;
             this.marker.y = this.layer.getTileY(this.game.input.activePointer.worldY) * 100;
             let flip = () => {
-            flipBack();
+                flipBack();
             console.log('flipped');
         };
         }
-        let flip = () => {
+        flip = () => {
             flipBack();
             console.log('flipped');
         };
@@ -82,6 +82,7 @@ export class MatchingPairs {
         // } else {
         //     // this.processClick();
         // }
+        // console.log('flipped');
     }
 
     render() {
