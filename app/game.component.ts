@@ -1,32 +1,17 @@
-import {Component, OnInit} from 'angular2/core';
-import {Fazer} from './fazer';
-
+import {Component} from 'angular2/core';
+// import {Fazer} from './fazer';
+import {MatchingPairs} from './matching_pairs/matching_pairs';
 @Component({
     selector: 'my-game',
     templateUrl: 'app/game.component.html',
     styleUrls: ['app/game.component.css']
 })
 
-export class GameComponent implements OnInit {
+export class GameComponent {
     game: Phaser.Game;
-    fazer: any;
+    currentGame: any;
     constructor() {
-        this.fazer = new Fazer();
-        // this.game = new Phaser.Game(800, 600, Phaser.AUTO, 'phaser-content', {
-        //     preload: this.preload,
-        //     create: this.create });
+        this.currentGame = new MatchingPairs();
         console.log('constructor');
     }
-    create() {
-        console.log('create');
-       // this.game.stage.backgroundColor = '#2d2d2d';
-    }
-
-    preload() {
-        console.log('preload');
-    }
-
-    ngOnInit() {
-        console.log('on int');
-    };
 }

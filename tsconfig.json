@@ -20,6 +20,8 @@
     "app/boot.ts",
     "app/game.component.ts",
     "app/fazer.ts",
+    "app/fazer.pairs.ts",
+    "app/matching_pairs/matching_pairs.ts",
     "typings/tsd.d.ts"
   ],
   "atom": {
