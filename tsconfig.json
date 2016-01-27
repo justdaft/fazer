@@ -19,6 +19,7 @@
     "app/app.component.ts",
     "app/boot.ts",
     "app/game.component.ts",
+    "app/fazer.ts",
     "typings/tsd.d.ts"
   ],
   "atom": {
